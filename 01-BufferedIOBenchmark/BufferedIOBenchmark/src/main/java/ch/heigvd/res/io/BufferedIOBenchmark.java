@@ -238,10 +238,13 @@ public class BufferedIOBenchmark {
 		bm.consumeTestData(IOStrategy.BlockByBlockWithoutBufferedStream, 5, statDataRead);
 		bm.consumeTestData(IOStrategy.ByteByByteWithoutBufferedStream, 0, statDataRead);
                 
-                WriteCSV.writeFile("C:\\Tmp\\Test.csv", statDataWriteBuffer);
-                WriteCSV.writeFile("C:\\Tmp\\Test.csv", statDataWrite);
-                WriteCSV.writeFile("C:\\Tmp\\Test.csv", statDataReadBuffer);
-                WriteCSV.writeFile("C:\\Tmp\\Test.csv", statDataRead);
+                
+                // Call the static methode "writeFile" to write the statistics about
+                // the read/write operation in a CSV files.
+                WriteCSV.writeFile("G:\\Temp\\HDD4.csv", statDataWriteBuffer);
+                WriteCSV.writeFile("G:\\Temp\\HDD4.csv", statDataWrite);
+                WriteCSV.writeFile("G:\\Temp\\HDD4.csv", statDataReadBuffer);
+                WriteCSV.writeFile("G:\\Temp\\HDD4.csv", statDataRead);
 	}
 
 }

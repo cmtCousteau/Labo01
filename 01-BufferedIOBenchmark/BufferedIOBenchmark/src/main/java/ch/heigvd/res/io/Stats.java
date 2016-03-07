@@ -1,14 +1,16 @@
 /*
+ *-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ * File      : Stats.java
+ * Author(s) : Marco Monzione
+ * Date      : 07.03.2016
+ *-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  */
+
 package ch.heigvd.res.io;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author marco
- */
 public class Stats {
 
     private final String name;
@@ -27,7 +29,7 @@ public class Stats {
        sizeBlockList.add(value);
     }
     //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-    //
+    // Return a string list contining the time of read/write operations
     //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     public List<String> getTimeList(){
 
@@ -39,7 +41,7 @@ public class Stats {
         return timeListString;
     }
     //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-    //
+    // Return a string list contining the block size.
     //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     public List<String> getBlockList(){
 

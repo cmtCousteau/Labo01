@@ -1,5 +1,9 @@
 /*
-
+ *-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+ * File      : WriteCSV.java
+ * Author(s) : Marco Monzione
+ * Date      : 07.03.2016
+ *-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
  */
 package ch.heigvd.res.io;
 
@@ -7,10 +11,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.util.List;
 
-/**
- *
- * @author marco
- */
 public class WriteCSV {
     
     public static void writeFile(String path, Stats statTmp){
