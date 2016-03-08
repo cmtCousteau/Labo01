@@ -241,10 +241,10 @@ public class BufferedIOBenchmark {
                 
                 // Call the static methode "writeFile" to write the statistics about
                 // the read/write operation in a CSV files.
-                WriteCSV.writeFile("G:\\Temp\\HDD4.csv", statDataWriteBuffer);
-                WriteCSV.writeFile("G:\\Temp\\HDD4.csv", statDataWrite);
-                WriteCSV.writeFile("G:\\Temp\\HDD4.csv", statDataReadBuffer);
-                WriteCSV.writeFile("G:\\Temp\\HDD4.csv", statDataRead);
+                WriteCSV.writeCSV("C:\\Temp\\file.csv", statDataWriteBuffer);
+                WriteCSV.writeCSV("C:\\Temp\\file.csv", statDataWrite);
+                WriteCSV.writeCSV("C:\\Temp\\file.csv", statDataReadBuffer);
+                WriteCSV.writeCSV("C:\\Temp\\file.csv", statDataRead);
 	}
 
 }

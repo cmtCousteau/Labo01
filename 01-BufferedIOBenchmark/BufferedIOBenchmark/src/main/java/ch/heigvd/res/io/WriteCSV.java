@@ -13,26 +13,13 @@ import java.util.List;
 
 public class WriteCSV {
     
-    public static void writeFile(String path, Stats statTmp){
+    public static void writeCSV(String path, Stats statTmp){
         
         try{
             File file = new File(path);
             file.createNewFile();
             FileWriter fileWrite = new FileWriter(file,true);
-        
-        /* fileWrite.write(statTmp.GetString() + "\n");
-        
-            fileWrite.write("Time;");
-            for(String strTmp : statTmp.getTimeList()){
-                fileWrite.write(strTmp + ";");  // écrire une ligne dans le fichier resultat.txt
-            }
-                fileWrite.write("\n Block size;");
-        
-            for(String strTmp : statTmp.getBlockList()){
-                fileWrite.write(strTmp + ";");  // écrire une ligne dans le fichier resultat.txt
-            }
-            fileWrite.write("\n");*/
-       
+
             List<String> timeListTmp  = statTmp.getTimeList();
             List<String> blockListTmp = statTmp.getBlockList();
        
